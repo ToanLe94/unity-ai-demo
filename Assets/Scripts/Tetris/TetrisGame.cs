@@ -28,8 +28,8 @@ public class TetrisGame : MonoBehaviour
     const int ROWS_SPAWN = 4;               // hidden buffer rows above
     const int ROWS_ALL   = ROWS_VIS + ROWS_SPAWN; // total grid height
 
-    const float CELL      = 28f;            // canvas pixel size of each grid cell
-    const float MINI_CELL = 20f;            // cell size for hold / preview panels
+    const float CELL      = 42f;            // canvas pixel size of each grid cell
+    const float MINI_CELL = 26f;            // cell size for hold / preview panels
     const float LOCK_DELAY = 0.5f;          // seconds before piece locks
     const int   MAX_LOCK_RESETS = 15;       // max lock-delay resets per piece
 
@@ -648,12 +648,14 @@ public class TetrisGame : MonoBehaviour
         bool onFloor = Collides(pType, pRot, pRow + 1, pCol);
         if (onFloor)
         {
-            if (!isLocking) { isLocking = true; lockTimer = 0; }
+            if (!isLocking) 
+            { 
+                isLocking = true; 
+                lockTimer = 0; 
+                PlaySoundSFXResources(drop, transform.position);
+            }
             lockTimer += Time.deltaTime;
             if (lockTimer >= LOCK_DELAY) LockPiece();
-
-            PlaySoundSFXResources(drop, transform.position);
-
         }
         else
         {
