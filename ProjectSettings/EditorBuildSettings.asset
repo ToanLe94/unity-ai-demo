@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Tennis Mobile/Scenes/Game scene.unity
+    path: Assets/0.Raws/Tennis Mobile/Scenes/Game scene.unity
     guid: b8ce6bd324a432c43a8238329791d0e4
   - enabled: 1
-    path: Assets/Tennis Mobile/Scenes/Bonus.unity
+    path: Assets/0.Raws/Tennis Mobile/Scenes/Bonus.unity
     guid: 6d84362d68b7b274ea3d0b7b3e9e1090
   - enabled: 1
-    path: Assets/Tennis Mobile/Scenes/Dance scene.unity
+    path: Assets/0.Raws/Tennis Mobile/Scenes/Dance scene.unity
     guid: 9ff0a938721889f4180dea513210687c
   - enabled: 1
-    path: Assets/Tennis Mobile/Scenes/Player shop.unity
+    path: Assets/0.Raws/Tennis Mobile/Scenes/Player shop.unity
     guid: 9cdeaed6c5387c64382850f8240e4fac
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f,
